@@ -1,5 +1,6 @@
 package com.vlad.nuna;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Basic {
@@ -58,5 +59,18 @@ public class Basic {
         System.out.print("Input second number: ");
         double secondNumber = in.nextDouble();
         System.out.println(firstNumber > 0 && firstNumber < 1 && secondNumber > 0 && secondNumber < 1);
+    }
+
+    public static void Exercise160() {
+        // Write a Java program to find the k smallest elements in a given array. Elements in the array can be in any order.
+        Integer arr[] = new Integer[]{1, 23, 111, 7, 32, 18, 100, 90, 144, 2, 2};
+        int k = 3;
+        System.out.println("Original Array: ");
+        System.out.println(Arrays.toString(arr));
+        System.out.println(k + " smallest elements of the said array are:");
+        Arrays.sort(arr);
+        for (int i = 0; i < k; i++){
+            System.out.print(arr[i] + " ");
+        }
     }
 }
