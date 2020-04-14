@@ -1,5 +1,7 @@
 package com.vlad.nuna;
 
+import java.util.Scanner;
+
 public class Main {
 
 
@@ -26,5 +28,27 @@ public class Main {
 
         booleanOutput = (false || false) && (true && true);
         System.out.println("(false || false) && (true && true)-> " + booleanOutput);
+    }
+
+
+    public static void Exercise152() {
+        Scanner in = new Scanner(System.in);
+        System.out.print("Input first number: ");
+        int firstNumber = in.nextInt();
+        System.out.print("Input second number: ");
+        int secondNumber = in.nextInt();
+        System.out.print("Input third number: ");
+        int thirdNumber = in.nextInt();
+        System.out.print("Input fourth number: ");
+        int fourthNumber = in.nextInt();
+
+        if (firstNumber == secondNumber && secondNumber == thirdNumber && thirdNumber == fourthNumber)
+        {
+            System.out.println("Numbers are equal.");
+        }
+        else
+        {
+            System.out.println("Numbers are not equal!");
+        }
     }
 }
