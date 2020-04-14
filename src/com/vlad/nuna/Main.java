@@ -32,6 +32,7 @@ public class Main {
 
 
     public static void Exercise152() {
+        // Write a Java program that accepts four integer from the user and prints equal if all four are equal, and not equal otherwise.
         Scanner in = new Scanner(System.in);
         System.out.print("Input first number: ");
         int firstNumber = in.nextInt();
@@ -50,5 +51,16 @@ public class Main {
         {
             System.out.println("Numbers are not equal!");
         }
+    }
+
+
+    public static void Exercise153() {
+        // Write a Java program that accepts two double variables and test if both strictly between 0 and 1 and false otherwise.
+        Scanner in = new Scanner(System.in);
+        System.out.print("Input first number: ");
+        double firstNumber = in.nextDouble();
+        System.out.print("Input second number: ");
+        double secondNumber = in.nextDouble();
+        System.out.println(firstNumber > 0 && firstNumber < 1 && secondNumber > 0 && secondNumber < 1);
     }
 }
