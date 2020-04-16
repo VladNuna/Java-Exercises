@@ -12,6 +12,10 @@ public class Main {
         //basic.Exercise151();
         //basic.Exercise152();
         //basic.Exercise153() ;
-        basic.Exercise214();
+        //basic.Exercise214();
+
+        DataTypes dataTypes = new DataTypes();
+        dataTypes.Exercise1();
+        dataTypes.Exercise2();
     }
 }

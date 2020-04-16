@@ -20,4 +20,15 @@ public class DataTypes {
         double  celsius =(( 5 *(fahrenheit - 32.0)) / 9.0);
         System.out.println(fahrenheit + " degree Fahrenheit is equal to " + celsius + " in Celsius");
     }
+
+
+    public static void Exercise2() {
+        // Write a Java program that reads a number in inches, converts it to meters.
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Input a value for inch: ");
+        double inch = input.nextDouble();
+        double meters = inch * 0.0254;
+        System.out.println(inch + " inch is " + meters + " meters");
+    }
 }
