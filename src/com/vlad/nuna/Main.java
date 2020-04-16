@@ -9,8 +9,9 @@ public class Main {
         // write your code here
         Basic basic = new Basic();
 
-        basic.Exercise151();
+        //basic.Exercise151();
         //basic.Exercise152();
-        //basic.Exercise153();
+        //basic.Exercise153() ;
+        basic.Exercise214();
     }
 }
