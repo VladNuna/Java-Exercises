@@ -31,4 +31,26 @@ public class DataTypes {
         double meters = inch * 0.0254;
         System.out.println(inch + " inch is " + meters + " meters");
     }
+    public static void Exercise3() {
+        // Write a Java program that reads an integer between 0 and 1000 and adds all the digits in the integer.
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Input an integer between 0 and 1000: ");
+        int num = input.nextInt();
+        if(num > 1000 || num < 0){
+            System.out.println("The number should be between 0 and 1000. Try again \n");
+            Exercise3();
+            return;
+        }
+
+        int sum = 0;
+        int initialNumber = num;
+        while(1 <= num){
+            sum += num % 10;
+            num = num/10;
+        }
+
+        System.out.println("The sum of all digits in " + initialNumber + " is " + sum);
+
+    }
 }
